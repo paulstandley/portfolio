@@ -5,11 +5,85 @@ section {
   height: 100vh; }
 
 nav {
-  overflow: hidden;
+  padding: 0.18rem;
+  margin: 0;
+  z-index: 100;
   position: fixed;
+  overflow: auto;
   top: 0;
-  left: 0; }
+  left: 0;
+  width: 100vw;
+  background-color: #e7e1df; }
+  nav h1 {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-size: 2.2rem;
+    background-color: #e5e5fb; }
+  nav ol {
+    border: 0.2rem 0.25rem ridge lightblue;
+    padding: 0.2rem;
+    margin: 0;
+    background-color: #d4f8f8; }
+    nav ol li {
+      padding: 0.2rem 0.12rem;
+      background-color: #aad0f1;
+      list-style: none;
+      float: left; }
+      nav ol li a {
+        display: block;
+        padding: 0.2rem 0.1rem;
+        background-color: aliceblue;
+        font-size: 0.6rem; }
+      nav ol li a:hover {
+        color: #bae22b;
+        background-color: burlywood; }
+      nav ol li a:active {
+        color: #bd11bd;
+        background-color: #6d5252; }
+
+h2 {
+  font-size: 1.6rem;
+  padding-top: 7rem; }
 
 @media screen and (max-width: 460px) {
   body {
-    background-color: rgba(250, 249, 253, 0.815); } }
+    background-color: rgba(250, 249, 253, 0.815); }
+  nav {
+    padding: 0.18rem;
+    margin: 0;
+    z-index: 100;
+    position: fixed;
+    overflow: auto;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    background-color: #e7e1df; }
+    nav h1 {
+      padding: 0;
+      margin: 0;
+      text-align: center;
+      font-size: 2.2rem;
+      background-color: #e5e5fb; }
+    nav ol {
+      padding: 0 0 0 2.2rem;
+      background-color: #d4f8f8; }
+      nav ol li {
+        padding: 0.3rem 0.6rem;
+        background-color: #aad0f1;
+        list-style: none;
+        float: left; }
+        nav ol li a {
+          display: block;
+          padding: 0.6rem;
+          background-color: aliceblue;
+          font-size: 0.6rem; }
+        nav ol li a:hover {
+          color: #ddedf3;
+          background-color: #806db4; }
+        nav ol li a:active {
+          color: #f0cdf0;
+          background-color: #5f4949; }
+  h2 {
+    font-size: 1.2rem;
+    padding-top: 7rem; } }
