@@ -1,54 +1,14 @@
-body {
-  background-color: rgba(115, 127, 136, 0.5); }
+* {
+  padding: 0;
+  margin: 0; }
 
 section {
-  height: 100vh; }
-
-nav {
-  padding: 0.18rem;
-  margin: 0;
-  z-index: 100;
-  position: fixed;
-  overflow: auto;
-  top: 0;
-  left: 0;
+  height: 100vh;
   width: 100vw;
-  background-color: #e7e1df; }
-  nav h1 {
-    padding: 0;
-    margin: 0;
-    text-align: center;
-    font-size: 2.2rem;
-    background-color: #e5e5fb; }
-  nav ol {
-    border: 0.2rem 0.25rem ridge lightblue;
-    padding: 0.2rem;
-    margin: 0;
-    background-color: #d4f8f8; }
-    nav ol li {
-      padding: 0.2rem 0.12rem;
-      background-color: #aad0f1;
-      list-style: none;
-      float: left; }
-      nav ol li a {
-        display: block;
-        padding: 0.2rem 0.1rem;
-        background-color: aliceblue;
-        font-size: 0.6rem; }
-      nav ol li a:hover {
-        color: #bae22b;
-        background-color: burlywood; }
-      nav ol li a:active {
-        color: #bd11bd;
-        background-color: #6d5252; }
-
-h2 {
-  font-size: 1.6rem;
-  padding-top: 7rem; }
+  padding: 0;
+  margin: 0; }
 
 @media screen and (max-width: 460px) {
-  body {
-    background-color: rgba(250, 249, 253, 0.815); }
   nav {
     padding: 0.18rem;
     margin: 0;
@@ -58,32 +18,62 @@ h2 {
     top: 0;
     left: 0;
     width: 100vw;
-    background-color: #e7e1df; }
+    background-color: #e5e5fb; }
     nav h1 {
       padding: 0;
       margin: 0;
       text-align: center;
       font-size: 2.2rem;
+      color: #7452d3;
       background-color: #e5e5fb; }
     nav ol {
-      padding: 0 0 0 2.2rem;
-      background-color: #d4f8f8; }
+      padding: 0 1.2rem 0 1.8rem;
+      background-color: #e5e5fb; }
       nav ol li {
         padding: 0.3rem 0.6rem;
-        background-color: #aad0f1;
+        background-color: #e5e5fb;
+        margin: auto;
         list-style: none;
         float: left; }
         nav ol li a {
           display: block;
-          padding: 0.6rem;
-          background-color: aliceblue;
-          font-size: 0.6rem; }
+          padding: 0.5rem;
+          background-color: white;
+          font-size: 0.7rem;
+          border: 0.2rem ridge #7452d3;
+          border-radius: 1.6rem; }
         nav ol li a:hover {
-          color: #ddedf3;
-          background-color: #806db4; }
-        nav ol li a:active {
-          color: #f0cdf0;
-          background-color: #5f4949; }
+          color: white;
+          background-color: #7452d3; }
   h2 {
-    font-size: 1.2rem;
-    padding-top: 7rem; } }
+    font-size: 1.6rem;
+    padding-top: 6rem;
+    text-align: center;
+    color: #7452d3; }
+  div {
+    font-size: 1rem;
+    text-align: center; }
+  #main-welcome {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: #e5e5fb; }
+  #aboutme {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: #cccce7; }
+  #projects {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: #fbf9fc; }
+  #links {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: #f5f1f8; } }

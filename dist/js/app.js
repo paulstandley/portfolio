@@ -1,1 +1,6 @@
-console.log("Hello World"),console.log(" How Are You");
+"use strict";
+
+let welcome = document.getElementById("div1");
+welcome.innerHTML = `<p>Hi evry one</p>`;
+
+console.log(welcome);

@@ -1,67 +1,24 @@
-$bgColorMain: rgba(115, 127, 136, 0.5);
+$bgNavList: rgb(229, 229, 251);
+$mainText: rgb(116, 82, 211);
+$bgaboutme: rgb(204, 204, 231);
+$bgprojects: rgb(251, 249, 252);
+$bglinks: rgb(245, 241, 248);
+$bga: white;
 
-body {
-  background-color: $bgColorMain;
+* {
+  padding: 0;
+  margin: 0;  
 }
 
 section {
   height: 100vh;
-}
-
-nav {
-  padding: 0.18rem;
-  margin: 0;
-  z-index: 100;
-  position: fixed;
-  overflow: auto;
-  top: 0;
-  left: 0;
   width: 100vw;
-  background-color: rgb(231, 225, 223);
-  h1 {
-    padding: 0;
-    margin: 0;
-    text-align: center;
-    font-size: 2.2rem;
-    background-color: rgb(229, 229, 251);
+  padding: 0;
+  margin: 0;
   }
-  ol {
-    border: 0.2rem 0.25rem ridge lightblue;
-    padding: 0.2rem;
-    margin: 0;
-    background-color: rgb(212, 248, 248);
-    li {
-      padding: 0.2rem 0.12rem;
-      background-color: rgb(170, 208, 241);
-      list-style: none;
-      float: left;
-      a {
-        display: block;
-        padding: 0.2rem 0.1rem;
-        background-color: aliceblue;
-        font-size: 0.6rem;
-      }
-      a:hover {
-        color:rgb(186, 226, 43);
-        background-color: burlywood;
-      }
-      a:active {
-        color: rgb(189, 17, 189);
-        background-color: rgb(109, 82, 82)
-      }
-    }
-  }
-}
-
-h2 {
-  font-size: 1.6rem;
-  padding-top: 7rem;
-}
 
 @media screen and (max-width: 460px) {
-  body {
-    background-color: rgba(250, 249, 253, 0.815);
-  }
+
   nav {
     padding: 0.18rem;
     margin: 0;
@@ -71,42 +28,77 @@ h2 {
     top: 0;
     left: 0;
     width: 100vw;
-    background-color: rgb(231, 225, 223);
+    background-color: $bgNavList;
     h1 {
       padding: 0;
       margin: 0;
       text-align: center;
       font-size: 2.2rem;
-      background-color: rgb(229, 229, 251);
+      color: $mainText;
+      background-color: $bgNavList;
     }
     ol {
-      padding: 0 0 0 2.2rem;
-      background-color: rgb(212, 248, 248);
+      padding: 0 1.2rem 0 1.8rem;
+      background-color: $bgNavList;
       li {
         padding: 0.3rem 0.6rem;
-        background-color: rgb(170, 208, 241);
+        background-color: $bgNavList;
+        margin: auto;
         list-style: none;
         float: left;
         a {
           display: block;
-          padding: 0.6rem;
-          background-color: aliceblue;
-          font-size: 0.6rem;
+          padding: 0.5rem;
+          background-color: $bga;
+          font-size: 0.7rem;
+          border: 0.2rem ridge $mainText;
+          border-radius: 1.6rem; 
         }
         a:hover {
-          color:rgb(221, 237, 243);
-          background-color: rgb(128, 109, 180);
-        }
-        a:active {
-          color: rgb(240, 205, 240);
-          background-color: rgb(95, 73, 73)
+          color: $bga;
+          background-color: $mainText;
         }
       }
     }
   }
-  
   h2 {
-    font-size: 1.2rem;
-    padding-top: 7rem;
+    font-size: 1.6rem;
+    padding-top: 6rem;
+    text-align: center;
+    color: $mainText;
+  }
+
+  div {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  #main-welcome {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: $bgNavList;
+  }
+  #aboutme {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: $bgaboutme;
+  }
+  #projects {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: $bgprojects;
+  }
+  #links {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: $bglinks;
   }
 }
