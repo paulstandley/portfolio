@@ -24,7 +24,8 @@ section {
       margin: 0;
       text-align: center;
       font-size: 2.2rem;
-      color: #7452d3;
+      color: #491cc5;
+      text-shadow: 0.11rem 0.13rem black, 0.12rem 0.15rem;
       background-color: #e5e5fb; }
     nav ol {
       padding: 0 1.2rem 0 1.8rem;
@@ -37,19 +38,19 @@ section {
         float: left; }
         nav ol li a {
           display: block;
-          padding: 0.5rem;
+          padding: 0.1rem 0.6rem;
           background-color: white;
           font-size: 0.7rem;
-          border: 0.2rem ridge #7452d3;
+          border: 0.1rem ridge #491cc5;
           border-radius: 1.6rem; }
         nav ol li a:hover {
           color: white;
-          background-color: #7452d3; }
+          background-color: #491cc5; }
   h2 {
     font-size: 1.6rem;
     padding-top: 6rem;
     text-align: center;
-    color: #7452d3; }
+    color: #491cc5; }
   div {
     font-size: 1rem;
     text-align: center; }
@@ -64,7 +65,7 @@ section {
     margin: 0;
     height: 100vh;
     width: 100vw;
-    background-color: #cccce7; }
+    background-color: #cfc7e2; }
   #projects {
     padding: 0;
     margin: 0;
@@ -76,4 +77,4 @@ section {
     margin: 0;
     height: 100vh;
     width: 100vw;
-    background-color: #f5f1f8; } }
+    background-color: #e5e5fb; } }

@@ -1,6 +1,6 @@
 $bgNavList: rgb(229, 229, 251);
-$mainText: rgb(116, 82, 211);
-$bgaboutme: rgb(204, 204, 231);
+$mainText: rgb(73, 28, 197);
+$bgaboutme: rgb(207, 199, 226);
 $bgprojects: rgb(251, 249, 252);
 $bglinks: rgb(245, 241, 248);
 $bga: white;
@@ -35,6 +35,7 @@ section {
       text-align: center;
       font-size: 2.2rem;
       color: $mainText;
+      text-shadow: 0.11rem 0.13rem black, 0.12rem 0.15rem;
       background-color: $bgNavList;
     }
     ol {
@@ -48,10 +49,10 @@ section {
         float: left;
         a {
           display: block;
-          padding: 0.5rem;
+          padding: 0.1rem 0.6rem;
           background-color: $bga;
           font-size: 0.7rem;
-          border: 0.2rem ridge $mainText;
+          border: 0.1rem ridge $mainText;
           border-radius: 1.6rem; 
         }
         a:hover {
@@ -99,6 +100,6 @@ section {
     margin: 0;
     height: 100vh;
     width: 100vw;
-    background-color: $bglinks;
+    background-color: $bgNavList;
   }
 }

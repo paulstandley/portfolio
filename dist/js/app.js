@@ -1,6 +1,12 @@
 "use strict";
 
-let welcome = document.getElementById("div1");
-welcome.innerHTML = `<p>Hi evry one</p>`;
+var allDom;
+var domholder = [];
+for(var i = 1; i <= 4; i++) {
+allDom = document.getElementById(`div${i}`);
+allDom.innerHTML = `<p>this is div${i} </p>`;
+domholder.push(allDom);
+allDom = '';
+}
 
-console.log(welcome);
+console.log(domholder);
