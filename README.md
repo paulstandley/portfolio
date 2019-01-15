@@ -14,6 +14,7 @@ npm install --save-dev gulp-sass
 npm install --save-dev gulp-imagemin
 npm install --save-dev gulp-concat
 npm install --save-dev gulp-uglify
+npm install pump
 ```
 
 ---

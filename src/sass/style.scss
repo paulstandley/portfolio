@@ -1,5 +1,7 @@
 $bgNavList: rgb(229, 229, 251);
 $mainText: rgb(73, 28, 197);
+$h1shadow: 0.06rem 0.1rem black;
+$h2shadow: 0.01rem 0.011rem black;
 $bgaboutme: rgb(207, 199, 226);
 $bgprojects: rgb(251, 249, 252);
 $bglinks: rgb(245, 241, 248);
@@ -35,7 +37,7 @@ section {
       text-align: center;
       font-size: 2.2rem;
       color: $mainText;
-      text-shadow: 0.11rem 0.13rem black, 0.12rem 0.15rem;
+      text-shadow: $mainshadow;
       background-color: $bgNavList;
     }
     ol {
@@ -44,9 +46,11 @@ section {
       li {
         padding: 0.3rem 0.6rem;
         background-color: $bgNavList;
-        margin: auto;
         list-style: none;
-        float: left;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
         a {
           display: block;
           padding: 0.1rem 0.6rem;
@@ -67,6 +71,7 @@ section {
     padding-top: 6rem;
     text-align: center;
     color: $mainText;
+    text-shadow: $mainshadow;
   }
 
   div {
@@ -101,5 +106,5 @@ section {
     height: 100vh;
     width: 100vw;
     background-color: $bgNavList;
-  }
+  }   
 }

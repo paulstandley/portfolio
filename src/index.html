@@ -4,8 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="css/style.css">
   <!--<script defer src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>-->
+  <!-- Links and style sheets for project 1 -->
+  <meta name="description" content="game">
+  <!--<meta http-equiv="refresh" content="0; url=http://localhost:5500">-->
+  <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+  <link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Coda">
+  <!--<link rel="stylesheet" href="pro/1-pro/css/style.css">-->
+  <link rel="stylesheet" href="css/style.css">
+ 
   <title>Portfoilo</title>
 </head>
 <body>
@@ -39,6 +46,89 @@
   <section id="projects">
     <h2 class="project-tile">Projects</h2>
     <div id="div3">
+      <!-- start pro 1 -->
+      <div id="fullBody" class="container">
+          <header>
+              <h2>Memory Game</h2>
+          </header>
+  
+          <section class="score-panel">
+              <h3 id="goAway">Udacity FEWD Project-3</h3>
+            <ul class="stars">
+              <li><i id="thirdStar" class="fa fa-star"></i></li>
+              <li><i id="secondStar" class="fa fa-star"></i></li>
+              <li><i id="firstStar" class="fa fa-star"></i></li>
+            </ul>
+  
+            <span class="moves"></span>
+              <span id="timeSpan"></span>
+              <span id="startReset"></span>
+              <span id="movesMade"></span>
+              <div class="restart">
+              <i class="fa fa-repeat"></i>
+              </div>
+               
+          </section>
+  
+          <ul class="deck">
+              <li id="a1" class="card open">
+                  <i class="fa fa-diamond"></i>
+              </li>
+              <li id="a2" class="card open">
+                  <i class="fa fa-paper-plane-o"></i>
+              </li>
+              <li id="a3" class="card open">
+                  <i class="fa fa-anchor"></i>
+              </li>
+              <li id="a4" class="card open">
+                  <i class="fa fa-bolt"></i>
+              </li>
+              <li id="b1"  class="card open">
+                  <i class="fa fa-cube"></i>
+              </li>
+              <li id="b2" class="card open">
+                  <i class="fa fa-anchor"></i>
+              </li>
+              <li id="b3" class="card open">
+                  <i class="fa fa-leaf"></i>
+              </li>
+              <li id="b4" class="card open">
+                  <i class="fa fa-bicycle"></i>
+              </li>
+              <li id="c1" class="card open">
+                  <i class="fa fa-diamond"></i>
+              </li>
+              <li id="c2" class="card open">
+                  <i class="fa fa-bomb"></i>
+              </li>
+              <li id="c3" class="card open">
+                  <i class="fa fa-leaf"></i>
+              </li>
+              <li id="c4" class="card open">
+                  <i class="fa fa-bomb"></i>
+              </li>
+              <li id="d1" class="card open">
+                  <i class="fa fa-bolt"></i>
+              </li>
+              <li id="d2" class="card open">
+                  <i class="fa fa-bicycle"></i>
+              </li>
+              <li id="d3" class="card open">
+                  <i class="fa fa-paper-plane-o"></i>
+              </li>
+              <li id="d4" class="card open">
+                  <i class="fa fa-cube"></i>
+              </li>
+          </ul>
+          <div id="idModal" class="classModal">
+              <div class="modalContent">
+                  <span id="displayModal"></span>
+                  <span class="endGame">&timesd;</span>
+                  <button id="reStartButton" class="templateButton">Play Again</button>
+              </div>
+          </div>
+      </div>
+      <!-- end of pro 1 -->
       <a href="https://codepen.io/pielo2/full/paOeLB" target="_blank" rel="noopener noreferrer">Project Memory</a>
     </div>
   </section>
