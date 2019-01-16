@@ -15,6 +15,7 @@ npm install --save-dev gulp-imagemin
 npm install --save-dev gulp-concat
 npm install --save-dev gulp-uglify
 npm install pump
+npm install --save-dev gulp-babel @babel/core @babel/preset-env
 ```
 
 ---

@@ -13,12 +13,14 @@ gulp.task('imgmin', function(cb) {
     cb();
 });
  
-gulp.task('bab', () =>
+gulp.task('bab', function(cb) {
     gulp.src('src/js/*.js')
-        .pipe(babel({
-            presets: ['@babel/env']
-        }))
-        .pipe(gulp.dest('dist/js'))
+      .pipe(babel({
+          presets: ['@babel/env']
+      }))
+      .pipe(gulp.dest('dist/js'))   
+      cb();
+    }
 );
 
 gulp.task('compress', function (cb) {
