@@ -49,9 +49,9 @@
 
     </div>
     <!-- start pro -->
-    <a href="pro/1-pro/index.html" rel="noopener noreferrer">Projec Memory</a>
-    <a href="pro/2-pro/index.html" rel="noopener noreferrer">Javascript Game</a>
-    <a href="pro/3-pro/index.html" rel="noopener noreferrer">Rest</a>
+    <a href="pro/1-pro/index.html" target="_blank" rel="noopener noreferrer">Projec Memory</a>
+    <a href="pro/2-pro/index.html" target="_blank" rel="noopener noreferrer">Javascript Game</a>
+    <a href="pro/3-pro/index.html" target="_blank" rel="noopener noreferrer">Restaurant Review</a>
     <!-- end of pro -->
 
   </section>
@@ -63,5 +63,21 @@
     <a class="links" href="https://codepen.io/pielo2" target="_blank" rel="noopener noreferrer">Codepen</a>
   </section>
   <script src="js/app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.7.3/firebase.js"></script>
+  <script>
+  // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyAjBNqiV4Ulf0szFo1EErrn8KjRRL3k0_Y",
+      authDomain: "paulstandley-1.firebaseapp.com",
+      databaseURL: "https://paulstandley-1.firebaseio.com",
+      projectId: "paulstandley-1",
+      storageBucket: "paulstandley-1.appspot.com",
+      messagingSenderId: "443257023138"
+    };
+    firebase.initializeApp(config);
+    const db = firebase.firestore();
+    db.settings({ timestampsInSnapshots: true });
+  </script>
+  <script src="js/loaders.js"></script>
 </body>
 </html>
