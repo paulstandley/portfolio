@@ -1,3 +1,5 @@
+@import '_nav';
+
 $bgNavList: rgb(229, 229, 251);
 $mainText: rgb(73, 28, 197);
 $h1shadow: 0.1rem 0.1rem black;
@@ -19,53 +21,7 @@ section {
   margin: 0;
   }
 
-@media screen and (max-width: 460px) {
-
-  nav {
-    padding: 0.18rem;
-    margin: 0;
-    z-index: 100;
-    position: fixed;
-    overflow: auto;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    background-color: $bgNavList;
-    h1 {
-      padding: 0;
-      margin: 0;
-      text-align: center;
-      font-size: 2.2rem;
-      color: $mainText;
-      text-shadow: $h1shadow;
-      background-color: $bgNavList;
-    }
-    ol {
-      padding: 0 1.2rem 0 1.8rem;
-      background-color: $bgNavList;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: row;
-      li {
-        padding: 0.3rem 0.6rem;
-        background-color: $bgNavList;
-        list-style: none;
-        a {
-          display: block;
-          padding: 0.1rem 0.6rem;
-          background-color: $bga;
-          font-size: 0.7rem;
-          border: 0.1rem ridge $mainText;
-          border-radius: 1.6rem; 
-        }
-        a:hover {
-          color: $bga;
-          background-color: $mainText;
-        }
-      }
-    }
-  }
+@media screen and (max-width: 600px) {
   h2 {
     font-size: 1.6rem;
     padding-top: 6rem;
@@ -73,12 +29,10 @@ section {
     color: $mainText;
     text-shadow: $h2shadow;
   }
-
   div {
     font-size: 1rem;
     text-align: center;
   }
-
   #main-welcome {
     padding: 0;
     margin: 0;

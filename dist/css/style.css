@@ -1,14 +1,4 @@
-* {
-  padding: 0;
-  margin: 0; }
-
-section {
-  height: 100vh;
-  width: 100vw;
-  padding: 0;
-  margin: 0; }
-
-@media screen and (max-width: 460px) {
+@media screen and (max-width: 600px) {
   nav {
     padding: 0.18rem;
     margin: 0;
@@ -47,7 +37,19 @@ section {
           border-radius: 1.6rem; }
         nav ol li a:hover {
           color: white;
-          background-color: #491cc5; }
+          background-color: #491cc5; } }
+
+* {
+  padding: 0;
+  margin: 0; }
+
+section {
+  height: 100vh;
+  width: 100vw;
+  padding: 0;
+  margin: 0; }
+
+@media screen and (max-width: 600px) {
   h2 {
     font-size: 1.6rem;
     padding-top: 6rem;
