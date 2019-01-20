@@ -7,14 +7,15 @@ fetch('json/data.json').then(function (response) {
 }).catch(function (error) {
   console.error(error);
 });
-
+/*
 function render(doc) {
   console.dir(doc);
-} // getting data
+}
 
-
-db.collection('users').get().then(function (snapshot) {
-  snapshot.docs.forEach(function (doc) {
-    render(doc);
+// getting data
+db.collection('users').get().then(snapshot => {
+  snapshot.docs.forEach(doc => {
+      render(doc);
   });
 });
+*/

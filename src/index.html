@@ -33,14 +33,14 @@
     <main id="main-welcome">
       <h2>Welcome</h2>
       <div id="div1">
-        
+        <canvas id="c"></canvas>
       </div>
     </main>
   </section>
   <section id="aboutme">
     <h2>About Me</h2>
     <div id="div2">
-
+      <img src="img/profile-1.png" alt="Me and an Oldham millstone">
     </div>
   </section>
   <section id="projects">
@@ -62,7 +62,6 @@
     <a id="profile-link" class="links" href="http://github.com/paulstandley" target="_blank" rel="noopener noreferrer">Github</a>
     <a class="links" href="https://codepen.io/pielo2" target="_blank" rel="noopener noreferrer">Codepen</a>
   </section>
-  <script src="js/app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/5.7.3/firebase.js"></script>
   <script>
   // Initialize Firebase
@@ -78,6 +77,8 @@
     const db = firebase.firestore();
     db.settings({ timestampsInSnapshots: true });
   </script>
+  <script src="js/app.js"></script>
   <script src="js/loaders.js"></script>
+  <script src="js/canvas.js"></script>
 </body>
 </html>

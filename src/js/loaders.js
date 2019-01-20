@@ -8,7 +8,7 @@ fetch('json/data.json')
 }).catch(function(error) {
   console.error(error);
 });
-
+/*
 function render(doc) {
   console.dir(doc);
 }
@@ -19,3 +19,4 @@ db.collection('users').get().then(snapshot => {
       render(doc);
   });
 });
+*/
