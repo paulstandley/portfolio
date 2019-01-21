@@ -115,7 +115,7 @@ Vector.prototype = {
 function GravityPoint(x, y, radius, targets) {
   Vector.call(this, x, y);
   this.radius = radius;
-  this.currentRadius = radius * 0.9;
+  this.currentRadius = radius * 0.4;
   this._targets = {
     particles: targets.particles || [],
     gravities: targets.gravities || []
@@ -123,7 +123,7 @@ function GravityPoint(x, y, radius, targets) {
   this._speed = new Vector();
 }
 
-GravityPoint.RADIUS_LIMIT = 65;
+GravityPoint.RADIUS_LIMIT = 25;
 GravityPoint.interferenceToPoint = true;
 
 GravityPoint.prototype = function (o) {
@@ -136,7 +136,7 @@ GravityPoint.prototype = function (o) {
 
   return s;
 }({
-  gravity: 0.005,
+  gravity: 0.007,
   isMouseOver: false,
   dragging: false,
   destroyed: false,
@@ -162,7 +162,7 @@ GravityPoint.prototype = function (o) {
     this._speed = this._speed.add(d);
   },
   collapse: function collapse(e) {
-    this.currentRadius *= 1.75;
+    this.currentRadius *= 1.5;
     this._collapsing = true;
   },
   render: function render(ctx) {
@@ -201,7 +201,7 @@ GravityPoint.prototype = function (o) {
       if ((this.currentRadius >= g.radius || this.dragging) && this.distanceTo(g) < (this.currentRadius + g.radius) * 0.85) {
         g.destroyed = true;
         this.gravity += g.gravity;
-        absorp = Vector.sub(g, this).scale(g.radius / this.radius * 0.5);
+        absorp = Vector.sub(g, this).scale(g.radius / this.radius * 0.4);
         this.addSpeed(absorp);
         garea = g.radius * g.radius * Math.PI;
         this.currentRadius = Math.sqrt((area + garea * 3) / Math.PI);
@@ -220,17 +220,17 @@ GravityPoint.prototype = function (o) {
   _draw: function _draw(ctx) {
     var grd, r;
     ctx.save();
-    grd = ctx.createRadialGradient(this.x, this.y, this.radius, this.x, this.y, this.radius * 5);
-    grd.addColorStop(0, 'rgba(135, 206, 250)');
-    grd.addColorStop(1, 'rgba(0, 0, 0, 0)');
+    grd = ctx.createRadialGradient(this.x, this.y, this.radius, this.x, this.y, this.radius * 4);
+    grd.addColorStop(0, 'rgba(0, 0, 0, 0.5)');
+    grd.addColorStop(1, 'rgba(135, 206, 250)');
     ctx.beginPath();
-    ctx.arc(this.x, this.y, this.radius * 5, 0, Math.PI * 2, false);
+    ctx.arc(this.x, this.y, this.radius * 2, 0, Math.PI * 4, false);
     ctx.fillStyle = grd;
     ctx.fill();
     r = Math.random() * this.currentRadius * 0.7 + this.currentRadius * 0.3;
     grd = ctx.createRadialGradient(this.x, this.y, r, this.x, this.y, this.currentRadius);
-    grd.addColorStop(0, 'rgba(135, 206, 250)');
-    grd.addColorStop(1, Math.random() < 0.2 ? 'rgb(73, 28, 197)' : 'rgba(103, 181, 191, 0.75)');
+    grd.addColorStop(0, 'rgba(72, 28, 196)');
+    grd.addColorStop(1, Math.random() < 0.2 ? 'rgba(135, 206, 250)' : 'rgba(107, 99, 126)');
     ctx.beginPath();
     ctx.arc(this.x, this.y, this.currentRadius, 0, Math.PI * 1.2, false);
     ctx.fillStyle = grd;
@@ -264,7 +264,7 @@ Particle.prototype = function (o) {
     this._speed.add(d);
   },
   update: function update() {
-    if (this._speed.length() > 18) this._speed.normalize().scale(12);
+    if (this._speed.length() > 10) this._speed.normalize().scale(8);
 
     this._latest.set(this);
 
@@ -293,9 +293,9 @@ Particle.prototype = function (o) {
 (function () {
   // Configs
   var BACKGROUND_COLOR = 'rgb(229, 229, 251)',
-      PARTICLE_RADIUS = 3,
-      G_POINT_RADIUS = 16,
-      G_POINT_RADIUS_LIMITS = 75; // Vars
+      PARTICLE_RADIUS = 4,
+      G_POINT_RADIUS = 14,
+      G_POINT_RADIUS_LIMITS = 100; // Vars
 
   var canvas,
       context,
@@ -320,8 +320,8 @@ Particle.prototype = function (o) {
     var cx = canvas.width * 0.5,
         cy = canvas.height * 0.5;
     grad = context.createRadialGradient(cx, cy, 0, cx, cy, Math.sqrt(cx * cx + cy * cy));
-    grad.addColorStop(0, 'rgba(0, 0, 0, 0)');
-    grad.addColorStop(1, 'rgba(0, 0, 0, 0.35)');
+    grad.addColorStop(0, 'rgba(107, 99, 126)');
+    grad.addColorStop(1, 'rgba(207, 199, 226, 0.8)');
   }
 
   function mouseMove(e) {
@@ -391,7 +391,7 @@ Particle.prototype = function (o) {
 
 
   control = {
-    particleNum: 1100
+    particleNum: 1000
   }; // Init
 
   canvas = document.getElementById('c');
@@ -451,7 +451,7 @@ Particle.prototype = function (o) {
 
     len = particles.length;
     bufferCtx.save();
-    bufferCtx.fillStyle = bufferCtx.strokeStyle = '#fff';
+    bufferCtx.fillStyle = bufferCtx.strokeStyle = '#491cc5';
     bufferCtx.lineCap = bufferCtx.lineJoin = 'round';
     bufferCtx.lineWidth = PARTICLE_RADIUS * 2;
     bufferCtx.beginPath();
