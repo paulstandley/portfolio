@@ -49,6 +49,10 @@ section {
   padding: 0;
   margin: 0; }
 
+footer {
+  background-color: #e5e5fb;
+  color: white; }
+
 @media screen and (max-width: 600px) {
   canvas {
     z-index: 0;
@@ -76,6 +80,12 @@ section {
     height: 100vh;
     width: 100vw;
     background-color: #cfc7e2; }
+    #aboutme #img1 {
+      width: 100vw;
+      height: 5%; }
+    #aboutme p {
+      font-size: 0.8rem;
+      text-align: center; }
   #projects {
     padding: 0;
     margin: 0;
