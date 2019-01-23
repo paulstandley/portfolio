@@ -87,11 +87,33 @@ footer {
       font-size: 0.8rem;
       text-align: center; }
   #projects {
-    padding: 0;
+    padding: 0.8rem;
     margin: 0;
     height: 100vh;
     width: 100vw;
     background-color: #fbf9fc; }
+    #projects a {
+      padding: 0.6rem 0.8rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column; }
+      #projects a img {
+        width: 60%;
+        height: 40%; }
+      #projects a p {
+        font-size: 0rem; }
+    #projects a:hover {
+      padding: 0.6rem 0.8rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column; }
+      #projects a:hover img {
+        width: 60%;
+        height: 40%; }
+      #projects a:hover p {
+        font-size: 1rem; }
   #links {
     padding: 0;
     margin: 0;
