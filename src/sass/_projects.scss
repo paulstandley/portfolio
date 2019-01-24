@@ -1,0 +1,36 @@
+#projects {
+  padding: 0.8rem;
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: $bgprojects;
+  a {
+    padding: 0.6rem 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    img {
+      width: 40%;
+      height: 40%;
+    }
+    p {
+      font-size: 0rem;
+    }
+  }
+  a:hover {
+    padding: 0.6rem 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    img {
+      width: 0%;
+      height: 0%;
+    }
+    p {
+      font-size: 0.8rem;
+      text-align: center;
+    }
+  }
+}
