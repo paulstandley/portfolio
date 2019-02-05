@@ -69,6 +69,16 @@
       font-size: 0.8rem;
       text-align: center; }
 
+#div4 .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row; }
+  #div4 .icon a {
+    padding: 0.4rem 1.2rem; }
+    #div4 .icon a i {
+      font-size: 3rem; }
+
 * {
   padding: 0;
   margin: 0; }

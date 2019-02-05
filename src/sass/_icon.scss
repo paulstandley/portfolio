@@ -1,6 +1,14 @@
-.icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
+#div4 {
+    .icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        a {
+            padding: 0.4rem 1.2rem;
+            i {
+                font-size: 3rem;
+            }
+        }
+    }
 }
